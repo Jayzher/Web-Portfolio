@@ -1,0 +1,177 @@
+/* (*) is a Universal Selector*/
+
+/* (;) is a delimiter, which is used to express that a specific line of code is done being written */
+
+/* font-family changes the style of the font two values are typically provided here. The first is the primary font and the second is used when the browser cannot load the primary font
+*/
+
+/*Font-size changes the size of the text in the below example, "20px" refers to 20 pixels in size
+*/
+
+* {
+	font-family: "Courier New," monospace;
+	font-size: 20px;
+	color: cyan;
+}
+
+/*(#) ID Selector*/
+#zuitt-motto {
+	position: relative;
+	left: 33%;
+	padding: 7px;
+	letter-spacing: 3px;
+	color: cyan;
+	width: fit-content;
+	border-block: solid;
+	border-left: solid;
+	border-right: solid;
+	
+}
+/* (.) Class Selector*/
+.offering-item {
+	text-transform: uppercase;
+}
+
+/*Attribute selector*/
+
+/* Attribute selector will only target elements with the specified */
+
+/* Attribute with no value = all elements with attribute regardless of value are affected */
+
+/*Attribute with value = ONLY elements with that attribute and value are affected*/
+
+Input[required] {
+	border-width: 2px;
+	border-style: solid;   
+	border-color: cyan;
+}
+
+input[type="email"] {
+	border-width: 2px;  
+	border-style: solid;
+	border-color: goldenrod;
+}
+
+/* CSS Selector Combinators */
+
+/*Adjacent sibling selector*/
+h3 + img {
+	position: relative;
+	border-radius: 100px;
+	border-color: cyan;
+	border: solid;
+	width: 590px;
+	left: 29%;
+}
+
+#devo {
+	height: 50vh;
+	width: 50vw;
+	border: solid cyan;
+	left: 25%;
+	position: relative;
+}
+
+/*descendant selector*/
+/*Only select direct or indirect children of the first element */
+#bootcamp-learning-list li {
+	color: lightcyan;
+}
+/*General sibling selector*/
+/*separates two selectors and matches the second element only if it follows the first element (though not necessarily immediately) and both are children of the same parent*/
+h2 ~ a {
+	position: relative;
+	left: 46%;
+	width: fit-content;
+	display: inline;
+	padding: 10px;
+
+}
+
+/*Child selector*/
+/*seperates two selectors and matches only those elements matched by the second selector that are children of elements matched before */
+section > form > label {
+	color: rgb(897, 20, 10);
+}
+
+body {
+	background-color: black;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#main	{
+	color: lightgoldenrodyellow;
+	text-align: center;
+	font-size: 2em;
+	padding-top: 70px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#zuitt {
+	float: right;
+	position: relative;
+	right: 16%;
+	font-size: 40pt;
+	display: inline;
+}
+
+a + div {
+	margin-top: 10px;
+	margin-right: -80px;
+	border: solid limegreen 2px;
+	padding: 5px;
+	float: right;
+	display: inline;
+}
+
+
+/*pseudo class*/
+/*changes the style when hovered over*/
+a:hover {
+	background-color: darkcyan;
+	text-decoration: underline;
+}
+
+section > ol > li {
+	/* vh = viewport height = height of screen */
+	text-aign: center; 
+	color: cyan;
+	align-content: center;
+	display: list-item;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+section > ol {
+	border: solid 3px limegreen;
+	width: fit-content;
+	position: relative;
+	left: 39%;
+
+}
+
+form {
+	text-align: center;
+	background-color: white;
+	border: 2px solid limegreen;
+	/* border properties values do not have commas ,*/
+	height: fit-content;
+	width: 25vw;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	/* vw = viewport width */
+	position: relative;
+	/* position: changes the position of an element based on the next rule below (in this case, moves it left relative to the percentage of the screen) */
+	left: 37.25%;
+
+}
+
+h2 {
+	text-align: center;
+}

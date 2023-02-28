@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Mobile Responsive Meta Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Link for Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<title>Bootstrap Introduction and Simple Styles</title>
+</head>
+<body class="text-center bg-secondary">
+
+	<!-- 
+		Margin:
+		"mt-" - Margin Top
+		"mb-" - Margin Bottom
+		"ml-" - Margin Left
+		"mr-" - Margin Right
+
+		padding
+			"pt-" - padding top
+			"pb-" - padding bottom
+			"pl-" - padding left
+			"pr-" - padding right
+
+		values:
+			1, 2, 3, 4, 5, auto
+	
+	 -->
+	<!-- NavBar -->
+	<div class="bg-primary text-light fixed-top p-1">
+		Fixed Top -Navbar	
+	</div>
+
+	<!-- Header -->
+	<div class="mt-5">
+		<h1>Bootstrap Introduction and Simple Styles</h1>
+
+		<!-- "d" - Display -->
+		<div class="d-none d-lg-inline-block w-25 mt-4">
+			<img src="https://www.drupal.org/files/project-images/bootstrap-stack.png" class="rounded-circle bg-white img-fluid">
+		</div>
+
+	</div>
+
+	<!-- Table Container -->
+	<div class="container-fluid mt-5 mb-5">	
+		<table class="table table-dark table-bordered">
+			<thead>
+				<tr>
+					<th>Text</th>
+					<th>Background</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="#" class="text-primary">Primary Link</a>
+					</td>
+					<td class="bg-primary text-white">Primary</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="text-secondary">Secondary Link</a>
+					</td>
+					<td class="bg-secondary text-white">Secondary</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="text-success">Success Link</a>
+					</td> 
+					<td class="bg-success text-white">success</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="text-danger">Danger Link</a>
+					</td>
+					<td class="bg-danger text-white">Danger</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="text-warning">Warning Link</a>
+					</td> 
+					<td class="bg-warning text-white">Warning</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="text-info">Info Link</a>
+					</td>
+					<td class="bg-info text-white">Info</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="text-light">light Link</a>
+					</td>
+					<td class="bg-light text-white">light</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="text-dark">Dark Link</a>
+					</td>
+					<td class="bg-dark text-white">Dark</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="text-muted">Muted Link</a>
+					</td>
+					<td class="bg-transparent text-white">Transparent</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="text-white">White Link</a>
+					</td>
+					<td class="bg-white text-white">White</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- Bootstrap Text Classes -->
+		<table class="table table-dark table-bordered">
+			<thead>
+				<tr>
+					<th>Alignment</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="text-left">Left</td>
+				</tr>
+				<tr>
+					<td class="text-center">Center</td>
+				</tr>
+				<tr>
+					<td class="text-right">Right</td>
+				</tr>
+
+				<!-- For extra small screens or small mobile phones, we can avoid using breakpoints -->
+                <!-- All mobile views in Google Chrome browser are considered small screen sizes -->
+                <!-- Screen size is greater than or equal to 576px -->
+                <!-- Larger mobile phones -->
+                <!-- text center -sm -m -lg -xl -->
+				<tr>
+					<td class="text-sm-center">Small Center</td>
+				</tr>
+				 <!-- Larger mobile phones -->
+				<!-- Screen size is greater than or equal to 786px -->
+                        <!-- Tablets -->
+				<tr>
+					<td class="text-right text-md-left">Medium Left</td>
+				</tr>
+				<!-- Screen size is greater than or equal to 992px -->
+                        <!-- Desktop -->
+				<tr>
+					<td class="text-lg-right">Large Right</td>
+				</tr>
+				<!-- Screen size is greater than or equal to 1200px -->
+                    <!-- TV and other large screens -->
+				<tr>
+					<td class="text-xl-center">Extra Large Center</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- Bootstrap Other Text Classes Table -->
+		<table class="table table-dark table-bordered">
+			<thead>
+				<tr>
+					<th>Text Transform</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="text-lowercase font-weight-bold">LOWERCASE BOLD TEXT</td>
+				</tr>
+				<tr>
+					<td class="text-uppercase font-weight-normal">uppercase normal text</td>
+				</tr>
+				<tr>
+					<td class="text-capitalize font-weight-light">capitalized light text</td>
+				</tr>
+				<tr>
+					<td class="text-decoration-none font-italic font-weight-bold"><a href="#">Non-Underlined italic link</a></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- Bootstrap Border and Sizing Classes -->
+		<table class="table table-dark table-bordered">
+			<thead>
+				<tr>
+					<th>Border</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div class="bg-info border border-white rounded w-100">
+							Rounded
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="bg-secondary border border-white rounded-circle w-50">
+							Rounded-Circle
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="bg-warning border border-white rounded-pill w-75">
+							Rounded Pill
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- Footer -->
+		<div class="bg-primary text-light fixed-bottom p-1">
+			Fixed Buttom - Footer
+		</div>
+	<!--  -->
+
+	<!-- Boottrap JS Link -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

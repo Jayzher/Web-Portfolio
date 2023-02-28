@@ -1,0 +1,63 @@
+body {
+	font-family: 'Open Sans', sans-serif ;
+}
+
+/*CSS - Reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#succeed-info {
+	background: white;
+	margin-bottom: 50px;
+	font-size: 14px;
+
+}
+
+.header {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.card {
+	margin-left: 190px;
+	padding: 10px;
+	color: black;
+
+}
+
+
+
+h3 {
+	padding-bottom: 20px;
+}
+
+#pre-footer {
+	background-color: #192841;
+	height: 20vh;
+	color: white;
+	font-size: 12px;
+	bottom: 10px;
+}
+
+section div  {
+	display: inline-block;
+	color: white;
+	padding-left: 10px;
+	padding-right: 150px;
+	padding-top: 15px;
+
+}
+
+footer {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+footer > span {
+	padding-left: 10px;
+}

@@ -1,0 +1,205 @@
+/** {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+
+}*/
+
+#div-1 {
+	background-color: green;
+	/*div by default is block*/
+/*	display: block; */
+	display: inline;
+}
+
+#span-1 {
+	background-color: purple;
+	/*span by default is inline*/
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+}
+
+#div-2 {
+	background-color: hotpink;
+	display: none;
+}
+
+#span-2 {
+	background-color: red;
+	display: block;
+}
+
+#img {
+	width: 250px;
+	height: 250px;
+	/*img by default is display inline-block*/
+	display: inline-block;
+}
+
+/*by default p is display: block*/
+#p-1 {
+	background-color: #B7CEFA;
+}
+
+#p-2 {
+	background-color: rgb(255,105,180);
+	width: 60%;
+}
+
+#p-3 {
+	background-color: yellow;
+	width: 40%;
+} 
+
+.sample {
+	display: inline-block;
+	width: 30%;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.img-float {
+	width: 250px;
+	height: 250px;
+	float: right;
+}
+
+.box {
+	background-color: red;
+	border: 1px solid black;
+	margin: 5px;
+}
+
+.fifty-percent {
+	width: 50%;
+}
+
+.one-hundred-pixels {
+	width: 100px;
+}
+
+/* vw - Viewport Width */
+.fifty-vw {
+	width: 50vw;
+}
+
+/*vh - Viewport Height*/
+.twenty-five-vh {
+	height: 25vh;
+}
+
+/* rem - Relative to the root element*/
+/* root element - HTML Element*/
+.one-rem {
+	font-size: 1em;
+}
+
+/* em - Relative to the parent element*/
+.one-em {
+	font-size: 1em;
+}
+
+.two-rem {
+	font-size: 2rem;
+}
+
+.two-em {
+	font-size: 2em;
+}
+
+.parent-element {
+	width: 150px;
+	border: 2px solid blue;
+}
+
+.background {
+	min-height: 31rem;
+	/* changing the color of the background*/
+/*	background-color: gray;*/
+	/* hex values = #808080 */
+	/* rgb = rgb(128,128,128) */
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/43/1003/707/anime-your-name-kimi-no-na-wa-mitsuha-miyamizu-wallpaper-preview.jpg);
+	background-repeat: no-repeat; 
+	/*repeat by default, no-repeat, repeat-x, repeat-y, space, round */ 
+	background-size: 100%;
+	/* auto, contain, cover, 100%, 60px */
+	background-position: 10% 40%;
+	/* x y	, 50px 100px, absolute, center, left, right, top, bottom */
+	background-attachment: fixed;
+	/* fixed, scroll, 	*/
+
+}
+
+.bg-title {
+	color: white;
+	text-align: center;
+	font-size: 5em;
+	margin: 0;
+	line-height: 35rem;
+}
+
+.container-bg {
+	/* change background opacity */
+	background-color: rgba(0, 0, 0, 0.5);
+	min-height: 100vh;
+}
+
+.parent {
+	background-color: skyblue;
+	padding: 10px;
+	position: relative;
+}
+
+.child-one {
+	background-color: gray;
+	padding: 10px;
+}
+
+.child-two {
+	background-color: yellow;
+	padding: 10px;
+	position: sticky;
+	top: 10px;
+	bottom: 10px;
+}
+
+.child-three {
+	background-color: gray;
+	padding: 10px;
+
+}
+
+.container {
+/*	position: relative;*/
+}
+
+.black-box {
+	position: relative;
+	z-index: 1;
+	border: 2px solid  black;
+	height: 100px;
+	margin: 30px;
+}
+
+.gray-box {
+	position: absolute;
+	z-index: 3;
+	background-color: lightgray;
+	height: 60px;
+	width: 70px;
+	left: 50px;
+	top: 50px;
+}
+
+.green-box {
+	position: absolute;
+	z-index: 2;
+	background-color: lightgreen;
+	height: 100px;
+	width: 25%;
+	top: -15px;
+}

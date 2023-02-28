@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Activity - CSS</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<style type="text/css">
+		#hobbies {
+			text-align: center; 
+			font-size: 9pt;
+			list-style-type: square;
+		}
+		#li2 {
+			font-size: 15px;
+		}
+		#label1 {
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a id="link1" href="">Profile</a>
+		<a id="link1" href="./index.html#Music">Music</a>
+		<a id="link1" href="./index.html#Contact">Contact</a>
+		<a id="link1"href="./index.html#About">About</a>
+		<a href="https://www.pinterest.ph/pin/290130400993924142/" target="t"><img id="logo" src="./image/logo.jpg" alt="Logo"></a>
+	</nav>
+	<div style="background-color: #236569; height: 350px; width: fit-content; border: solid black 5px; position: relative; top: 100px;">
+		<h2 id="profile">My Profile</h2>
+		<a href="https://www.facebook.com/PsyChoNyMouz/" target="t"><img style="height: 200px; width: 150px; border: solid black 3px; margin: 10px" src="./image/profile.jpg"></a>
+		<div id="intro">
+				<p>Name: Jayzher Juaniza</p>
+				<p>Birth Date: September 17, 2002</p>
+				<p>Age: 20</p>
+				<p>Hobbies: </p>
+				<ul id="hobbies">
+					<li class="font back">Watching Anime</li>
+					<li class="font back">Reading Manga</li>
+					<li class="font back">Listening Musics</li>
+					<li class="font back">Video Games</li>
+				</ul>
+		</div>
+	</div>
+	<hr>
+	<div id="Music">
+		<img style="height: 350px; width: 350px; border: solid cyan; margin-left: 105px; margin-top: 20px;" src="./image/listen-music.webp">
+		<h2>My Favorite Music:</h2>
+		<ol id="list2">
+			<li id="li2"> あれくん Alekun - Baka ばーか</li>
+				<audio controls>
+					<source src="./music/あれくん Alekun - Baka ばーか  Lyrics.mp3" type="audio/mpeg">
+				</audio>
+			<li id="li2"> ぎゅっと Gyutto - Mosawo もさを  Lyrics Video</li>	
+				<audio controls>
+					<source src="./music/ぎゅっと Gyutto - Mosawo もさを  Lyrics Video.mp3" type="audio/mpeg">
+				</audio>
+			<li id="li2"> Fire Force - Opening  Inferno</li>	
+				<audio controls>
+					<source src="./music/Fire Force - Opening  Inferno.mp3" type="audio/mpeg">
+				</audio>
+			<li id="li2"> Radwimps - Zen Zen Zense</li>	
+				<audio controls>
+					<source src="./music/Radwimps - Zen Zen Zense Lyrics (WishLyrics).mp3" type="audio/mpeg">
+				</audio>
+			<li id="li2"> Tada koe hitotsu - Rokudenashiロクデナシ - ただ声一つ</li>	
+				<audio controls>
+					<source src="./music/Tada koe hitotsu - Rokudenashiロクデナシ - ただ声一つ(Lyrics Video).mp3" type="audio/mpeg">
+				</audio>
+		</ol>
+	</div>
+	<hr id="bottom-hr">
+	<div id="Contact">
+		<h2>Contact: </h2>
+		<form action="https://www.facebook.com/PsyChoNyMouz/">
+				<label id="label1">First Name: </label><br>
+				<input type="text" name="fname" required><br>
+				<label id="label1">Last Name: </label><br>
+				<input type="text" name="lname" required><br>
+				<label id="label1">Email</label><br>
+				<input type="email" name="email" required><br><br>
+		</form>
+			<button type="submit">Submit</button>
+			<p style="font-size: 24px;">My Contact:</p>
+			<p>Facebook: <a style="font-size: 16px; color: limegreen;" href="https://www.facebook.com/PsyChoNyMouz/" target="t">https://www.facebook.com/PsyChoNyMouz/</a></p>
+			<p>Gmail: <a style="font-size: 16px; color: limegreen;" href="jayzherjuaniza@gmail.com">Jayzherjuaniza@gmail.com</a></p>
+	</div>
+	<hr style="position: relative; top: 850px;">
+	<div id="About">
+		<p style="font-size: 24px;">This Webpage is designed base on what I have currently learned in Bootcamp and research.</p>
+		<p style="font-size: 24px;">This Webpage is for educational purposes only.</p>
+		<p style="font-size: 24px;">All Images and Musics used is not owned and credited to their respected owners.</p>
+	</div>
+</body>
+</html>

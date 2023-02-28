@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Attributes and Links</title>
+</head>
+<body>
+
+	<!-- The id attribute assigns a unique named identifier to an element. -->
+	<h2 id="top">HTML Attributes</h2>
+
+	<!-- 
+
+	- HTML elements have a default "Behavior" when shown in a browser. Attributes allow us to change this behavior.
+	- paragraphs tag by default are aligned to the left part of our webpage.
+	- The "Align" attribute changes the alignment of the paragraph element.
+	-->
+
+	<p align="center"><em>Modifiers of element behaviors.</em></p>
+
+	<h2>HTML Images</h2>
+	<!-- 
+
+		- &gt; are called HTMl entities. They're used to include special characters into text. Some special characters use in HTML are read as part of the code. The angle braces <> is a common example of this. TO avoid any errors in code we use HTML entities.
+
+	 -->
+	<p align="right">
+		<em>An image can be shown using &lt;img&gt; tag along with its <strong>src</strong> attribute.</em>
+	</p>
+	<!-- Adds an image using absolute linking -->
+	<!-- 
+	- <img> tag used to include images.
+	- The src attribute accepts url from an online resource. the example provided above is an absolute link.
+	 -->
+	<a href="https://place-puppy.com"><img src="https://place-puppy.com/300x300?q=best&f=jpg" alt="Place-Puppy"></a>
+	<p><em>Click the Puppy to Visit Place-Puppy.com</em></p>
+	<!-- Adds an image using relative image -->
+	<img style="height: 400px; width: 300px; border: solid; border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;-radius: 10px;" src="./images/Playwithme.jpg" alt="Play-with-me">
+
+	<p>Valid image extensions are the following:</p>
+	<ol type="a" !reversed>
+		<li>PNG</li>
+		<li>JPG</li>
+		<li>GIF</li>
+		<li>SVG</li>
+		<li>WEBP</li>
+	</ol>
+
+	<!-- 
+		- the dot (.) symbol in the relative link refers to the current directory.
+		- the forward slash (/) symbol refers to accessing a different directory/folder.
+		- The Filename is added after the last forward slash (/) symbol and includes the file extension.
+		- The "Type" attribute changes the numbered points of the ol element.
+		The default type is the integer number.
+		- Other values for the type attribute are the ff:
+		- 1
+		- A
+		- I
+
+	- The "reversed" attribute reverse the order of the bullet points.
+	changes the "reversed" attributtes 
+	 -->
+
+	 <hr>
+
+	 <h2>HTML links</h2>
+	 <h4>Absolute Link</h4>
+	 <!-- Creates a hyperlink element that redirects to a different page -->
+	 <!-- "_Blank" used to open webpages/links to another tab -->
+	 <a href="https://zuitt.co/" target="_blank"><em><b>I'm a HyperLink</b></em></a>
+
+	 <!-- 
+
+		- <a> tag - creates a hyperlink elements when clicked will redirect us to a different page.
+		- The "href" attributes mean "hypertext reference" which is used to create a link to a different page.
+
+	  -->
+
+	  <h4>Relative Link</h4>
+
+	  <!-- Redirects to the link.html file -->
+	  <p>Go to <a href="./link.html"><em><b>link.html</b></em></a> page.</p>
+
+	  <!-- Redirects to the HTML element with the top id attribute -->
+	  <p id="bottom">Go to <a href="#top">Top</a></p>
+
+</body>
+</html>

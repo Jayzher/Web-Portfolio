@@ -1,0 +1,599 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Heebo', sans-serif;
+	background: linear-gradient(90deg, rgba(255,252,245,1) 9%, rgba(196,245,255,1) 48%, rgba(241,228,199,1) 100%);
+}
+
+#main-container{
+	background-color: rgba(0,0,0,0);
+  color: #fff;
+  bottom: 0;
+  height: 100%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.container-fluid {
+	height: 100%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+}
+
+#drop {
+	background-color: transparent;
+	border: none;
+	text-align: center;
+}
+
+#link2:hover {
+	text-decoration: none;
+}
+
+.card {
+	border: solid 3px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	width: 100px;
+	background-color: transparent;
+	cursor: pointer;
+	transition: 2s;
+}
+
+.card-2 {
+	border: solid 3px black;
+	align-items: center;
+	background-color: limegreen;
+	cursor: pointer;
+	transition: 2s;
+}
+
+.card:hover {
+	background-color: #6e6042;
+	color: azure;
+}
+
+#sub-container {
+	background-color: rgba(0,0,0,0.3);
+  color: #FFF;
+}
+
+.border-img-1 {
+	background-color: #f5ebd2;
+	border: solid 5px;
+	border-image: linear-gradient(29deg, rgba(255,235,187,1) 0%, rgba(201,189,159,1) 52%, rgba(244,227,191,1) 100%) 10 stretch;
+	box-shadow: 3px 3px #797363;
+}
+
+.border-img-2 {
+	border: 2px solid;
+	border-image: linear-gradient(29deg, rgba(255,235,187,1) 0%, rgba(201,189,159,1) 52%, rgba(244,227,191,1) 100%) 10 stretch;
+	box-shadow: 4px 5px #797363;
+	width: fit-content;
+}
+
+.border-img-3 {
+	border: 5px solid;
+	width: fit-content;
+	border-image: url('./img/border-3.gif') 10 stretch;
+}
+
+.fit {
+	width: fit-content;
+	height: fit-content;
+}
+
+.fit-1 {
+	margin-left: 50%;
+	width: fit-content;
+}
+
+@media screen and (max-width: 730px) {
+  .fit-1 {
+  margin-left: 0;
+	width: 100%;
+	}
+}
+
+
+.bg-img-3 {
+	background-image: url('./img/border-3.gif');
+}
+
+.bg-cyan {
+	background-color: cyan;
+}
+
+.cyan {
+	color: cyan;
+}
+
+.opacity {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+.opacity-trans{
+    opacity: 0.5;
+    color: #fff;
+}
+
+#nav-link {
+	padding-top: 2rem;
+	padding-left: 10rem;
+}
+
+#nav-link ul li {
+	color: cyan;
+	padding: 1rem;
+	list-style: none;
+}
+
+#nav-link ul li a {
+	padding-left: 10px;
+	padding-right: 10px;
+	border:solid 4px #ada48c;
+	color: #bd901e;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+#nav-link ul li a:hover {
+	color: #574822;
+	background-color: #d1b977;
+}
+
+.nav-current {
+	color: #574822;
+}
+
+nav div img {
+	height: 75px;
+	border: double royalblue;
+	float: left;
+}
+
+#my-name {
+	font-weight: bold;
+	color: #c9bd9f;
+	text-shadow: 2px 1px #464031;
+	font-size: 1.5rem;
+	padding-top: 1.1rem;
+	padding-left: 2rem;
+}
+
+.my-name {
+	font-weight: bold;
+	color: #c9bd9f;
+	text-shadow: 2px 1px #464031;
+	font-size: 0.5rem;
+}
+
+#name {
+	text-decoration: none;
+}
+
+p a {
+	text-decoration: none;
+	color: azure;
+	font-style: italic;
+}
+
+p a:hover {
+	text-decoration: none;
+	color: limegreen;
+}
+
+#profile {
+	text-align: left;
+}
+
+#carousel {
+
+}
+
+#vid-2 {
+	padding-left: 20px;
+}
+
+.text-1 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: azure;
+}
+
+.text-2 {
+	font-weight: bold;
+	font-size: 2rem;
+	text-shadow: 1px 2px black;
+	color: azure;
+}
+
+.text-3 {
+	font-weight: bold;
+	font-size: 16px;
+	color: azure;
+	text-shadow: 1px 1px black;
+}
+
+.text-4 {
+	font-weight: bold;
+	font-size: 2rem;
+	color: azure;
+}
+
+.text-5 {
+	font-weight: bold;
+	font-size: 2rem;
+	color: azure;
+	text-shadow: 2px 2px #464031;
+}
+
+.text-6 {
+	font-size: 16px;
+	color: black;
+}
+
+.text-7 {
+	font-size: 12px;
+	color: black;
+}
+
+.text-8 {
+	font-size: 16px;
+	color: black;
+}
+
+.text-9 {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: black;
+	text-shadow: 1px 1px #464031;
+}
+
+.text-10 {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: black;
+}
+
+#webdev {
+	padding-bottom: 31px;
+}
+
+#projc {
+	font-weight: bold;
+	font-size: 2rem;
+	color: azure;
+	text-shadow: 2px 2px #464031;
+}
+
+@media screen and (max-width: 745px) {
+	#projc {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: azure;
+	text-shadow: 2px 2px #464031;
+	}
+}
+
+@media screen and (max-width: 1128px) {
+	.text-10 {
+		font-weight: bold;
+		font-size: 13px;
+		color: black;
+	}
+	#webdev {
+	padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.text-10 {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: black;
+	}
+	#webdev {
+	padding-bottom: 31px;
+	}
+}
+
+.opacity-light {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 910px) {
+  .text-4 { font-size: 1.5rem; }
+}
+
+.shadow {
+	text-shadow: 2px 2px #797363;
+}
+
+.opacity-bg-cyan {
+	background-color: black;
+}
+
+/*Source W3School Side Navigation*/
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.currrent {
+	color: cyan;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-align: left;
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #f0dfb4;
+  display: block;
+  transition: 0.3s;
+}
+
+.bg-light-brown {
+	background-color: #6e6042;
+	height: 100%;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: azure;
+
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 10px;
+  margin-left: 0px;
+  height: fit-content;
+  width: fit-content;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 5px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 5px;}
+  .sidenav a {font-size: 10px;}
+}
+
+@media screen and (max-width: 700px) {
+  .text-2 {font-size: 18px;}
+}
+
+@media screen and (max-width: 1200px) {
+  #intro {font-size: 16px;}
+}
+
+#info-profile {
+	height: 400px;
+	width: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  #info-profile { 
+  height: 500px;
+	width: 400px; }
+}
+
+
+@media screen and (max-width: 990px) {
+	 #main-container {background-color: rgba(0,0,0,0.3);
+    color: black; width: 100%;}
+   #sub-container {background-color: rgba(0,0,0,0);
+    color: black; width: 100%;}
+}
+
+#feature {
+	color: azure;
+	font-weight: bold;
+	font-size: 2rem;
+	text-shadow: 2px 2px #797363;
+	margin-left: 20px;
+}
+
+#proj {
+	padding-left: 50px;
+	color: azure;
+	font-weight: bold;
+	font-size: 2rem;
+	text-shadow: 2px 2px #797363;
+	width: fit-content;
+}
+
+#capstone {
+	padding-left: 80px;
+	color: azure;
+	font-weight: bold;
+	font-size: 2rem;
+	text-shadow: 2px 2px #797363;
+	width: fit-content;
+}
+
+#project-container {
+	margin-bottom: 15%;
+	width: fit-content;
+	height: fit-content;
+}
+
+#service-container {
+	margin-bottom: 15%;
+	width: fit-content;
+	height: fit-content;
+}
+
+#contact-container {
+	margin-bottom: 5%;
+	width: fit-content;
+	height: fit-content;
+}
+
+@media screen and (max-width: 565px) {
+ #proj {
+	padding-left: 40px;
+	color: azure;
+	font-weight: bold;
+	font-size: 2rem;
+	text-shadow: 2px 2px #797363;
+	width: fit-content;
+	}
+}
+
+@media screen and (max-width: 565px) {
+ #capstone {
+	padding-left: 40px;
+	color: azure;
+	font-weight: bold;
+	font-size: 2rem;
+	text-shadow: 2px 2px #797363;
+	width: fit-content;
+	}
+}
+
+@media screen and (max-width: 565px) {
+  #project-container {
+	padding-left: 0;	
+	margin-bottom: 15%;
+	width: fit-content;
+	height: fit-content;
+	}
+}
+
+#menu {
+	border: solid black;
+	height: fit-content;
+	width: fit-content;
+	border-radius: 20px;
+	opacity: 0.5;
+	position: fixed;
+	text-align: left;
+	margin: 10px;
+	transition-property: opacity;
+	z-index: 1;
+}
+
+#menu-name {
+	font-size: 12px;
+
+}
+
+#menu-link li{
+	background-color: #d1b977;
+}
+
+#menu-profile {
+	padding: 0;
+	margin: 0;
+}
+
+#close-menu {
+	border: solid black;
+	height: fit-content;
+	width: fit-content;
+	border-radius: 20px;
+	opacity: 0.5;
+}
+
+#list {
+	list-style: square;
+	color: azure;
+	text-shadow: 1px 1px black;
+	padding-left: 50px;
+	margin-bottom: 10px;
+}
+
+#list li {
+	text-align: left;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+#info {
+	background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  width: fit-content;
+}
+
+#info-profile {
+
+}
+
+span {
+	text-shadow: 2px 1px #8b6506;
+}
+
+.span-1 {
+	text-shadow: none;
+}
+
+.trans {
+	color: transparent;
+	text-shadow: none;
+}
+
+hr {
+	border: solid 2px #ddcda7;
+}
+
+#hr-footer {
+	margin-bottom: 5px;
+	margin-top: 0;
+	border: solid black 1px;
+}
+
+.between {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+#carousel {
+	width: 300;
+}
+
+form input {
+	display: flex;
+	flex-direction: column;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

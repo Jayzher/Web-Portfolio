@@ -1,0 +1,48 @@
+
+p {
+	color: yellow;
+}
+
+* {
+	font-family: 'Verdana', sans-serif;
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 24pt;
+}
+
+#text4 {
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.bg-color {
+	background-color: limegreen;
+}
+
+li[type="1"] {
+	border-style: solid;
+	border-width: 2px;
+}
+
+img + ul {
+	list-style-type: none;
+	letter-spacing: 3px;
+}
+
+
+
+div img {
+	border-radius: 150px;
+}
+
+div > p {
+	color: black;
+}
+
+ul ~ p {
+	text-align: center;
+	
+}

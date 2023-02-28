@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Tables and Forms</title>
+</head>
+<body>
+	<!-- 
+	
+		- <div> tag - Creates a container element that's used to group certain HTML elements together.
+		- Using HTML semantics tags makes our website optimized for SEO and it's easier to differentiate portions of the code instead of matching for closing <div> tags
+
+	 -->
+	<div>
+		<h2>HTML Entities</h2>
+	</div>
+	<p><em>Reserved characters in HTML (e.g. &lt; or  &gt; characters that can mix up with HTML code).</em></p>
+	<!-- a header and a paragraph tag reinforce the concept of the HTML entities. -->
+
+	<!-- 
+
+	- Defines an HTML Table
+	- <table> tag it defines our HTML table that allows us to represent data in tabular format. </table>
+
+	 -->
+	<section>
+		<table border="1">
+		<!-- 
+			- Used to group table header content
+			- <thead> tag it is used to group header content in an HTML table.
+		-->
+		<thead>
+			<!-- Define a table row -->
+			<tr>
+				<!-- Defines a table element -->
+				<!-- 
+					- Defines the amount of columns the table element will occupy 
+					- The "Rowspan" attribute changes the amount of rows a table will occupy
+					- These attributes can be used for creating complex tables as needed
+				-->
+				<th colspan="2">Entity</th>
+				<th colspan="2">Description</th>
+			</tr>
+		</thead>
+		<!-- 
+			- Used to group table body content
+			- <tbody> tag it defines group table body HTML table.
+		-->
+		<tbody>
+			<tr>
+				<!-- 
+					- Defines a table data element
+					- In most cases, the number of td elements should be equal to the amount of th elements created in a table.
+				-->
+				<td align="center">&lt;</td>
+				<td align="center">lt</td>
+				<td align="center">Less than</td>
+
+			</tr>
+			<tr>
+				<td align="center">&gt;</td>
+				<td align="center">gt</td>
+				<td align="center">Greater than</td>
+			</tr>
+			<tr>
+				<td align="center">&#8369;</td>
+				<td align="center">#8369</td>
+				<td align="center">Peso Sign</td>
+			</tr>
+			<tr>
+				<td align="center">&amp;</td>
+				<td align="center">amp</td>
+				<td align="center">Ampersand or And Sign</td>
+			</tr>
+			<tr>
+				<td align="center">&quot;</td>
+				<td align="center">quot</td>
+				<td align="center">Double quotation mark</td>
+			</tr>
+			<tr>
+				<td align="center">&apos;</td>
+				<td align="center">apos</td>
+				<td align="center">Single quotation mark</td>
+			</tr>
+			<tr>
+				<td align="center">&ntilde;</td>
+				<td align="center">ntilde</td>
+				<td align="center">Lower Tilde</td>
+			</tr>
+			<tr>
+				<td align="center">&Ntilde;</td>
+				<td align="center">Ntilde</td>
+				<td align="center">Upper Tilde</td>
+			</tr>
+		</tbody>
+		<!-- Used to group table footer content -->
+		<tfoot>
+			<tr>
+				<th colspan="3">List of HTML entities</th>
+			</tr>
+		</tfoot>
+		</table>
+	</section>
+
+	<br><br>
+
+	<hr>
+
+	<h2>HTML Forms</h2>
+	<p><em>Input elements that make up a form.</em></p>
+
+	<!-- 
+		- Creates an HTML form to capture user input 
+		- The "Action"	attribute is used to define where the information wll be sent upon submission.
+	-->
+	
+	<section>
+		<form action="https://www.google.com/" target="t">
+
+		<!--
+		- Creates a label and allows for input field selection when clicked. 
+		- "for" attributes is used with "id" attribute in an input element. To allow the users select the input field when they clicked on the label for a better user experience.
+		- "type" attribute will define what type of information the input field should have. Changing it's value will automatically change the behavior of the input field.
+		- "name" attributes will provide the input field with a name that we can use to associate with the information provided by the user.
+		- "required" attribute will not allow to be submitted without any user input.
+		-->
+		<label for="full_name">Full Name:*</label>
+		<!-- Creates an input field to capture user input -->
+		<input type="name" name="full_name" id="full_name" required>
+
+		<br><br>
+		<label for="birth_date">Birth Date:*</label>
+		<!-- Creates an input field to capture user input -->
+		<input type="date" name="birth_date" id="birth_date" required>
+
+		<br><br>
+
+		<label for="Age">Age:*</label>
+		<input type="number" name="age" id="age" required>
+
+		<br><br>
+
+		<label for="gender">Gender:*</label>
+		<!-- 
+		- <select> tag - creates a dropdown menu based on the nested option tag.
+		- <option> tag - creates an option for the dropdown menu created by the selected tag.
+		- The "value" 
+		-->
+		<select name="gender" id="gender" required>
+			<option value="">None</option>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+		</select>
+
+		<br><br>
+
+		<label for="notes">Notes:</label>
+		<!-- 
+			- Creates a larger text input for capturing longer texts
+			- The "rows" attribute changes the number of text that the user can see
+			- The "cols" attribute changes the number of characters that can be placed per row
+		 -->
+		<textarea name="notes" rows="5" required></textarea>
+
+		<br><br>
+
+		<label>New User:</label><br>
+		<input type="radio" name="new_user" id="new_user" value="Yes" required>
+		<label for="user1">Yes</label><br>
+
+		<!--  
+		- The "radio" value create a radio button that is used to get a single piece of inrformation from a user of options.
+		- The "name" attribute of audio buttons need to be the same to allow only one value to be stored for a particular data when the form is submitted
+		- The "value" attribute is the information that will be sent when the form is submitted
+		 -->
+
+		<input type="radio" name="new_user" id="new_user" value="No" required>
+		<label for="user2">No</label><br>
+
+		<br><br>
+
+		<button type="submit">Submit</button>
+		<button type="reset">Reset</button>
+
+		<br><br>
+
+		<label>Role:</label>
+
+		<!-- 
+			- Creates a checkboxes for multiple choices  
+			- The "checkbox" value will create a checkbox to get amultiple option values.
+			- The "name" has to be unique for each checkbox.
+		-->
+
+		<input type="checkbox" name="Role1" id="Role1" value="Developer">
+		<label>Developer</label>
+
+		<input type="checkbox" name="Role2" id="Role2" value="Student">
+		<label>Student</label>
+
+		<input type="checkbox" name="Role3" id="Role3" value="Manager">
+		<label>Manager</label>
+		<!-- 
+			- Creates a button that will submit the form data
+			- This creates an inline element that triggers the form submission
+			- "type" attribute will define how the button will behave. The value of "Submit" is the button tag's default value and is not necessary to be included. Though it's good practice to have it added because it contain several buttons.
+		 -->
+		</form>
+	</section>
+
+</body>
+</html>
